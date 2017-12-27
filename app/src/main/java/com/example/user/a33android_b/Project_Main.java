@@ -12,9 +12,4 @@ public class Project_Main extends AppCompatActivity {
         setContentView(R.layout.activity_project__main);
     }
 
-    //연습코드 - 깃 연동
-    @Override
-    public boolean onContextItemSelected(MenuItem item) {
-        return super.onContextItemSelected(item);
-    }
 }
