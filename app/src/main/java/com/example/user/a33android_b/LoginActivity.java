@@ -3,6 +3,7 @@ package com.example.user.a33android_b;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -345,6 +346,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = null;
             showProgress(false);
         }
+    }
+
+    // 회원가입 페이지로 이동
+    public void signUp(View view) {
+        Intent intent = new Intent(LoginActivity.this, Project_Main.class);
+        // intent.putExtra("msg", "로그인 중");
+        startActivity(intent);
     }
 }
 
