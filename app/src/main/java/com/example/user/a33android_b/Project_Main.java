@@ -19,7 +19,7 @@ public class Project_Main extends AppCompatActivity {
     }
 
     public void btnOk(View view) {
-        Intent intent = new Intent(Project_Main.this, BoardActivity.class);
+        Intent intent = new Intent(Project_Main.this, MainBtnActivity.class);
         startActivity(intent);
     }
 }
